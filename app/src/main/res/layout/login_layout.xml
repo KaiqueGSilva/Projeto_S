@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5C000000">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="500dp"
+            android:src="@drawable/bannerbranco" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:text="Strong Innovation"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="220sp"
+            android:text="Technology and Information"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="280sp"
+            android:background="@drawable/botao"
+            android:drawableRight="@drawable/ic_baseline_email"
+            android:hint="E-mail"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="360sp"
+            android:background="@drawable/botao"
+            android:drawableRight="@drawable/ic_baseline_lock"
+            android:hint="Senha"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="115sp"
+            android:layout_height="20sp"
+            android:layout_marginLeft="241sp"
+            android:layout_marginTop="465sp"
+            android:text="Forgot password"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/chkBoxRememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="450dp"
+            android:text="Remember me"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="510dp"
+            android:background="@drawable/botaodois"
+            android:text="login"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="590dp"
+            android:background="@drawable/botaodois"
+            android:text="Cadastrar"
+            android:textStyle="bold" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
