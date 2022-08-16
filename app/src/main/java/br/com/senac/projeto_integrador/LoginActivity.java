@@ -14,9 +14,7 @@ public class LoginActivity extends AppCompatActivity {
     //Declarar as variáveis globais
 
     EditText edtEmail, edtSenha;
-    Button btnLogin, btnCadastrar;
-    TextView txtForgotPassword;
-    CheckBox chkBoxRememberme;
+    Button btnLogin, btnCadUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         edtEmail = findViewById(R.id.edtEmail);
         edtSenha = findViewById(R.id.edtSenha);
         btnLogin = findViewById(R.id.btnLogin);
-        btnCadastrar = findViewById(R.id.btnCadastrar);
-        txtForgotPassword = findViewById(R.id.txtForgotPassword);
-        chkBoxRememberme = findViewById(R.id.chkBoxRememberme);
+        btnCadUsuario = findViewById(R.id.btnCadUsuario);
 
         //Criando o clique do botão
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -49,29 +45,19 @@ public class LoginActivity extends AppCompatActivity {
                             MenuPrincipalActivity.class);
                     //Passar parâmetros para outras janelas
                     startActivity(intent);
+                    finish();
                 }
             }
         });
 
-        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+        btnCadUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getApplicationContext(),CadastroActivity.class));
+                finish();
             }
         });
 
-        txtForgotPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-        chkBoxRememberme.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
     }
 }
 

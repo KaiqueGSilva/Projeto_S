@@ -61,44 +61,28 @@
             android:hint="Senha"
             android:inputType="textPassword" />
 
-        <TextView
-            android:id="@+id/txtForgotPassword"
-            android:layout_width="115sp"
-            android:layout_height="20sp"
-            android:layout_marginLeft="241sp"
-            android:layout_marginTop="465sp"
-            android:text="Forgot password"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
-
-        <CheckBox
-            android:id="@+id/chkBoxRememberme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="450dp"
-            android:text="Remember me"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
-
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="180dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="510dp"
+            android:layout_marginTop="460dp"
             android:background="@drawable/botaodois"
-            android:text="login"
+            android:clickable="true"
+            android:text="Login"
+            android:textAllCaps="false"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnCadastrar"
+            android:id="@+id/btnCadUsuario"
             android:layout_width="180dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="590dp"
+            android:layout_marginTop="550dp"
             android:background="@drawable/botaodois"
+            android:clickable="true"
             android:text="Cadastrar"
+            android:textAllCaps="false"
             android:textStyle="bold" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
