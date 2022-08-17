@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 public class CadastroActivity extends AppCompatActivity {
     //Declarar as variáveis globais
-    EditText edtCadNome, edtCadEmail, edtCadCPF, edtCadSenha;
+    EditText edtCadNome, edtCadEmail, edtCadTel, edtCadSenha;
     Button btnCadCadastrar;
 
     @Override
@@ -22,7 +22,7 @@ public class CadastroActivity extends AppCompatActivity {
         //Apresentando as variáveis xml no java
         edtCadNome = findViewById(R.id.edtCadNome);
         edtCadEmail = findViewById(R.id.edtCadEmail);
-        edtCadCPF = findViewById(R.id.edtCadCPF);
+        edtCadTel = findViewById(R.id.edtCadTel);
         edtCadSenha = findViewById(R.id.edtCadSenha);
         btnCadCadastrar = findViewById(R.id.btnCadCadastrar);
 
@@ -31,29 +31,29 @@ public class CadastroActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String nome = edtCadNome.getText().toString().trim();
                 String email = edtCadEmail.getText().toString().trim();
-                String cpf = edtCadCPF.getText().toString().trim();
+                String cpf = edtCadTel.getText().toString().trim();
                 String senha = edtCadSenha.getText().toString().trim();
 
                 if (TextUtils.isEmpty(nome)) {
-                    edtCadNome.setError("Por favor insira o nome");
+                    edtCadNome.setError("Por favor, insira o nome");
                     edtCadNome.requestFocus();
                     return;
                 }
 
                 if (TextUtils.isEmpty(email)) {
-                    edtCadEmail.setError("Por favor insira o e-mail");
+                    edtCadEmail.setError("Por favor, insira o e-mail");
                     edtCadEmail.requestFocus();
                     return;
                 }
 
                 if (TextUtils.isEmpty(cpf)) {
-                    edtCadCPF.setError("Por favor insira o CPF");
-                    edtCadCPF.requestFocus();
+                    edtCadTel.setError("Por favor, insira o telefone");
+                    edtCadTel.requestFocus();
                     return;
                 }
 
                 if (TextUtils.isEmpty(senha)) {
-                    edtCadSenha.setError("Insira a senha");
+                    edtCadSenha.setError("Por favor, insira a senha");
                     edtCadSenha.requestFocus();
                     return;
                 }

@@ -47,7 +47,7 @@
             android:layout_marginTop="240dp"
             android:background="@drawable/botao"
             android:drawableRight="@drawable/ic_baseline_person"
-            android:hint="Nome "
+            android:hint="Nome"
             android:inputType="textPersonName" />
 
         <EditText
@@ -63,15 +63,15 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/edtCadCPF"
+            android:id="@+id/edtCadTel"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="400dp"
             android:background="@drawable/botao"
             android:maxLength="14"
-            android:drawableRight="@drawable/ic_baseline_note"
-            android:hint="CPF"
+            android:drawableRight="@drawable/ic_baseline_phone"
+            android:hint="Telefone"
             android:inputType="textPersonName" />
 
         <EditText
