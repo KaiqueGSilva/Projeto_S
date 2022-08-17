@@ -47,7 +47,7 @@ public class CadastroActivity extends AppCompatActivity {
                 }
 
                 if (TextUtils.isEmpty(cpf)) {
-                    edtCadCPF.setError("Por favor insira o cpf");
+                    edtCadCPF.setError("Por favor insira o CPF");
                     edtCadCPF.requestFocus();
                     return;
                 }
