@@ -31,7 +31,7 @@ public class CadastroActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String nome = edtCadNome.getText().toString().trim();
                 String email = edtCadEmail.getText().toString().trim();
-                String cpf = edtCadTel.getText().toString().trim();
+                String telefone = edtCadTel.getText().toString().trim();
                 String senha = edtCadSenha.getText().toString().trim();
 
                 if (TextUtils.isEmpty(nome)) {
@@ -46,7 +46,7 @@ public class CadastroActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (TextUtils.isEmpty(cpf)) {
+                if (TextUtils.isEmpty(telefone)) {
                     edtCadTel.setError("Por favor, insira o telefone");
                     edtCadTel.requestFocus();
                     return;
