@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (email.equals("email@gmail.com") && senha.equals("senha")) {
                     //Entrar aqui...
                     Intent intent = new Intent(getApplicationContext(),
-                            MenuPrincipalActivity.class);
+                            BarraInferiorActivity.class);
                     //Passar parâmetros para outras janelas
                     startActivity(intent);
                     finish();
